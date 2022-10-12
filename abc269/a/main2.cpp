@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int a, b, c, d;
+
+int main() {
+  cin >> a >> b >> c >> d;
+  cout << (a+b) * (c-d) << endl;
+  cout << "Takahashi" << endl;
+}
+// 9/24 1:56

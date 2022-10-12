@@ -1,0 +1,19 @@
+{
+    "name": "kpro",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "test": "g++ -O2 -std=c++14 /main1.cpp && oj t",
+      "cp": "cp main.cpp main2.cpp",
+      "start": "acc new ${npm_config_n} --template cpp",
+      "add": "acc add --template cpp"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "engines": {
+      "node": ">=0.10.3 <0.13"
+    }
+  }
+  
