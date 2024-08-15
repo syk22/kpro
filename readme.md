@@ -26,13 +26,14 @@ npm のスクリプトはイマイチ使い勝手が良くないため不使用
 `a.out` がコンパイルしたファイル  
 実行時は `./a.out`
 
-`acc new abc273 --template cpp` これで新しい問題を取得  
+`acc new abc273 --template ca` これで新しい問題を取得  
 A 問題だけを選択して DL するなど可能
 
-B 問題を追加する場合は `cd abc273` に移動後、 `acc add --template cpp` 実行  
+B 問題を追加する場合は `cd abc273` に移動後、 `acc add --template cb` 実行  
 B 問題を選択することで DL
 
-`--template cpp` をつけないとテンプレート作ってくれないのでつけること
+`--template ca` をつけないとテンプレート作ってくれないのでつけること  
+`ca` は A 問題特化型（と言うかそんなに難しいの不要なのでけしている）
 
 詳しくは[チュートリアルサイト](http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/)で
 
