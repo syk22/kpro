@@ -10,13 +10,14 @@ AtCoder([AtCoder Problems](https://kenkoooo.com/atcoder/#/table/syk2020))
 
 2 年ぶりにリポジトリ開いて全てを忘れ去っていたため記載
 
-`acc new abc273 --template cpp` これで新しい問題を取得  
-A 問題だけを選択して DL するなど可能
+マラソンに向けてテンプレートファイル(main.cpp)ではなくて main1.cpp を使用している  
+main2, main3... と増やしていく
 
-B 問題を追加する場合は `cd abc273` に移動後、 `acc add --template cpp` 実行  
-B 問題を選択することで DL
+提出するときは `acc submit main1.cpp` とコマンド  
+この時、ディレクトリは問題のあるディレクトリにいること
+submit 後の確認入力があるが、それさえきちんと入力できていれば提出できて、その後にブラウザで結果が確認できる
 
-`--template cpp` をつけないとテンプレート作ってくれないのでつけること
+npm のスクリプトはイマイチ使い勝手が良くないため不使用
 
 ## test / atcoder cli
 
@@ -25,14 +26,15 @@ B 問題を選択することで DL
 `a.out` がコンパイルしたファイル  
 実行時は `./a.out`
 
-~~`acc new abc216` これで新しいファイルを作っていける~~  
+`acc new abc273 --template cpp` これで新しい問題を取得  
+A 問題だけを選択して DL するなど可能
+
+B 問題を追加する場合は `cd abc273` に移動後、 `acc add --template cpp` 実行  
+B 問題を選択することで DL
+
+`--template cpp` をつけないとテンプレート作ってくれないのでつけること
+
 詳しくは[チュートリアルサイト](http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/)で
-
-~~カレントディレクトリを移動して `acc add` これで違うレベルの問題を追加できる~~
-
-~~`acc add --template cpp` と引数をつけることでテンプレートが実行できるように修正済み~~
-
--> この辺、わかりにくかったので上に記載しなおし
 
 `oj t` 該当フォルダにて実行すると、テストケースを走らせることが可能
 → 自前のテストケースも簡単に作れる
