@@ -13,15 +13,17 @@ AtCoder([AtCoder Problems](https://kenkoooo.com/atcoder/#/table/syk2020))
 マラソンに向けてテンプレートファイル(main.cpp)ではなくて main1.cpp を使用している  
 main2, main3... と増やしていく
 
-提出するときは `acc submit main1.cpp` とコマンド  
-この時、ディレクトリは問題のあるディレクトリにいること
+提出するときは `acc submit` とコマンド  
+main1.cpp を提出するように設定済みなので引数は特になし  
+この時、ディレクトリは問題のあるディレクトリにいることだけ注意
+
 submit 後の確認入力があるが、それさえきちんと入力できていれば提出できて、その後にブラウザで結果が確認できる
 
 npm のスクリプトはイマイチ使い勝手が良くないため不使用
 
 ## test / atcoder cli
 
-実行は上部の ▷ マークから `Run Code`
+実行は VSCode 上部の ▷ マークから `Run Code`
 
 `a.out` がコンパイルしたファイル  
 実行時は `./a.out`
