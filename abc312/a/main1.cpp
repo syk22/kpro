@@ -13,6 +13,7 @@ int main2() {
     if (S == C[i]) result = "Yes";
   }
   cout << result << endl;
+  return 0;
 }
 
 // 2024/8/16
@@ -26,4 +27,5 @@ int main() {
   bool check = any_of(vs.begin(), vs.end(), [](string str) { return S == str; });
   if (check) result = "Yes";
   cout << result << endl;
+return 0;
 }
