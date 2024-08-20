@@ -7,13 +7,15 @@ string S, result = "Yes";
 int main() {
   cin >> S;
   
-  // minDigit = 
   REP (i, 0, S.size() - 1) {
     if (S.size() == 1) break;
-    if (S[i] <= S[i + 1]) result = "No";
+    if (S.at(i) <= S.at(i + 1)) result = "No";
   }
 
   cout << result << endl;  
 
   return 0;
-;}
+}
+
+// 2024/8/19
+// 9分オーバー
