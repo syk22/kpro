@@ -4,7 +4,7 @@ using namespace std;
 #define REP(i, a, n) for (int i = (a); i < (n); ++i)
 #define FORE(i, a) for (auto &i : a)
 #define ALL(x) (x).begin(),(x).end()
-#define RREP(i, a, n) for (int i = (a); i >= (b); --i)
+#define RREP(i, a, n) for (int i = (a); i >= (n); --i)
 
 int H, W, r = 0, c = 0, currow, curcol;
 string res = "No";
