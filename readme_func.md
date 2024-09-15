@@ -2,14 +2,12 @@
 C++ 関数  
 よくわかっていないものメモ
 
-## 冪乗
-`pow(a, b);`
-
-## 平方根
-`sqrt(a);`
-
-## 立方根
-`cbrt(a);`
+## 冪乗、平方根、立方根
+```
+pow(a, b);
+sqrt(a);
+cbrt(a);
+```
 
 ## あまり
 ```
@@ -23,11 +21,16 @@ double a, b;
 modf(a, &b);
 ```
 
-## ソート、大きい順
-`sort(x.begin(), x.end(), greater<int>());`
+## ソート、大きい順(降順)
+```
+sort(x.begin(), x.end(), greater<int>());
+=> sort(x.rbegin(), x.rend())
+```
 
 ## 逆順
-`reverse(x.begin(), x.end());`
+```
+reverse(x.begin(), x.end());
+```
 
 ## ソート、特殊例
 ```
@@ -49,13 +52,7 @@ sort(S.begin(), S.end(), cmp);
 ```
 
 ## aをbで割って小数点を切り上げたい
-`(a+b-1) / b;`
-
-## 該当の配列位置特定
-```
-auto it = find(ALL(week), S);
-int i = distance(week.begin(), it);
-```
+`(a + b - 1) / b;`
 
 ## set
 ```
@@ -64,28 +61,28 @@ si.insert(x);
 ```
 
 ## pair
-構造化束縛を使うのは楽だけど、AtCoderはC++11なので使えない
 ```
 pair<int, string> pair_return() {
-    return {1, "aaa};
+    return {1, "aaa"};
 }
 int main() {
     auto[a, b] = pair_return();
     // a, bにそれぞれ代入されている
 }
 ```
-よってこちらの昔ながらの使い方をする必要がある
 ```
 pair<int, int> pii;
 pii = (make_pair(1, 0));
+pii.first; // -> 1
+pii.second; // -> 0
+get<0>(pii); // -> 1
 
-pair<int, string> pis (0, "str");
-// pis.second => "str"
-// get<0>(pii) => 1
-
+// こんな書き出し方もある
 string S;
 int N;
-tie(N, S) = pis;
-// N = 0
-// S = "str"
+tie(N, S) = pis;　// N = 0, S = "str"
 ```
+
+## 文字 'X' が N個の文字列を生成
+`string S(N, 'X');`
+
