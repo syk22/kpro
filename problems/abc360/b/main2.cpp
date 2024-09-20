@@ -15,7 +15,7 @@ int main() {
       string str = "";
       for (int i = c; i < S.size(); i += w) 
         str += S[i];
-      cout << str << endl;
+      // cout << str << endl;
       if (str == T) res = "Yes";
     }
   }

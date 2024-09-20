@@ -5,7 +5,7 @@ using namespace std;
 #define FORE(i, a) for (auto &i : a)
 
 int N, A;
-int sec = 0, flag = 0;
+int sec = 0;
 
 int main() {
   cin >> N >> A;
