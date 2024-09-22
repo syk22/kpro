@@ -3,7 +3,7 @@ using namespace std;
 
 #define REP(i, a, n) for (int i = (a); i < (n); ++i)
 
-int W, B, cnt;
+int W, B;
 string S = "wbwbwwbwbwbw";
 string res = "No";
 
@@ -12,7 +12,7 @@ int main() {
 
   REP (i, 0, S.size()) {
     int wcnt = 0, bcnt = 0;
-    REP (j, i, W + B) {
+    REP (j, 0, W + B) {
       if (S[(i + j) % S.size()] == 'w') wcnt++;
       else bcnt++;
     }
