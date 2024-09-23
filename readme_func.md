@@ -60,18 +60,25 @@ fill(v.begin(), v.end(), 0);
 ```
 vector<int> v(5);
 iota(v.begin(), v.end(), 1); // {1, 2, 3, 4, 5}
-accumulate(v.begin(), v.end(), 0LL); // long long型
+reduce(v.begin(), v.end(), 0LL); // long long型
 => 15;
 
 vector<int> v(5);
 iota(v.begin(), v.end(), 1); // {1, 2, 3, 4, 5}
-accumulate(v.begin(), v.end(), 1, [](int acc, int i) { return acc * 1});
+reduce(v.begin(), v.end(), 1, [](int acc, int i) { return acc * 1});
 => 120; // 1 * 1 * 2 * 3 * 4 * 5;
 
 vector<string> s = {"a", "bb", "ccc"};
-accumulate(v.begin(), v.end(), "");
+reduce(v.begin(), v.end(), "");
 => "abbccc";
 ```
 
+`accumulate` より `reduce` を使っておくほうが良さそう
 `inclusive_scan` や `exclusive_scan` などもあるが詳細はまた今度
 
+## 繰り返し文字列のX番目を取得
+```
+string S = "0123456789";
+int i = 175;
+S[(i + S.size()) % S.size()];
+```
