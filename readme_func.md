@@ -35,7 +35,6 @@ double a, b;
 modf(a, &b);
 ```
 
-
 ## 文字 'X' が N個の文字列を生成
 ```string S(N, 'X');```
 
