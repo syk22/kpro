@@ -6,6 +6,16 @@ AtCoder([AtCoder Problems](https://kenkoooo.com/atcoder/#/table/syk2020))
 
 [アルゴ式](https://algo-method.com/tasks)
 
+## 各 readme
+
+[readme_a](readme_a.md)  
+[readme_b](readme_b.md)  
+[readme_c](readme_c.md) 2024/10/12〜   
+[readme_d](readme_d.md) 2024/10/22〜  
+
+[readme_func](readme_func.md)  
+忘れがちな関数まとめ
+
 ## 使い方
 
 2 年ぶりにリポジトリ開いて全てを忘れ去っていたため記載
@@ -28,14 +38,16 @@ npm のスクリプトはイマイチ使い勝手が良くないため不使用
 `a.out` がコンパイルしたファイル  
 実行時は `./a.out`
 
-`acc new abc273 --template ca` これで新しい問題を取得  
+`acc new abc273 --template t` これで新しい問題を取得  
 A 問題だけを選択して DL するなど可能
 
-B 問題を追加する場合は `cd abc273` に移動後、 `acc add --template cb` 実行  
+B 問題を追加する場合は `cd abc273` に移動後、 `acc add --template t` 実行  
 B 問題を選択することで DL
 
-`--template ca` をつけないとテンプレート作ってくれないのでつけること  
-`ca` は A 問題特化型（と言うかそんなに難しいの不要なのでけしている）
+`--template t` をつけないとテンプレート作ってくれないのでつけること  
+~`ca` は A 問題特化型（と言うかそんなに難しいの不要なのでけしている）~
+
+→ コピペツールで管理しているので、ファイルだけ作ってもらう形式に変更
 
 詳しくは[チュートリアルサイト](http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/)で
 
@@ -59,14 +71,3 @@ default-template:
 
 atcoder-cli について詳細は下記参照  
 https://github.com/Tatamo/atcoder-cli#provisioning-template
-
-## 各 readme
-
-[readme_func](readme_func.md)  
-忘れがちな関数まとめ
-
-[readme_a](readme_a.md)  
-[readme_b](readme_b.md)  
-A 問題 B 問題振り返り
-
-最近はアルゴ式で DP とグラフ実装中
