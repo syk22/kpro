@@ -10,20 +10,20 @@ string S;
 int main() {
   cin >> N >> K >> S;
 
-  // cout << "----" << endl;
-
   string ok(K, 'O');
-  REP (i, 0, N) {
+  REP (i, 0, N - K + 1) {
     string subs = S.substr(i, K);
     if (subs == ok) {
       ++ans;
-      string next;
-      REP (j, 0, N) {
-        if (i <= j && j < i + K) next += 'X';
-        else next += S[j];
+      REP (j, i, i + K) {
+        S[j] = 'X';
       }
-      S = next;
-      // cout << S << endl;
+      // string next;
+      // REP (j, 0, N) {
+      //   if (i <= j && j < i + K) next += 'X';
+      //   else next += S[j];
+      // }
+      // S = next;
     }
   }
 
