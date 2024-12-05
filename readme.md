@@ -6,6 +6,8 @@ AtCoder([AtCoder Problems](https://kenkoooo.com/atcoder/#/table/syk2020))
 
 [アルゴ式](https://algo-method.com/tasks)
 
+2024/12現在、[鹿本を練習中](./AtCodeer/readme.md)
+
 ## 各 readme
 
 [readme_a](readme_a.md)  
